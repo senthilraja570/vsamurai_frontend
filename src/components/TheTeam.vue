@@ -5,11 +5,9 @@
       <img :src="user.image" alt="" />
       <div class="team-item">
         <h3>{{ user.name }}</h3>
-        <a :href="user.link" target="_blank" class="team-links"
-          ><i class="fab fa-twitter team-icon"></i
-        ></a>
       </div>
       <h4>{{ user.role }}</h4>
+        <h5 class="founder-about">{{ user.about }}</h5>
     </div>
   </div>
 </template>
@@ -21,46 +19,22 @@ export default {
     return {
       allTeam: [
         {
-          name: "@wardog1_vS",
+          name: "Jason BTO",
           role: "FOUNDER",
-          link: "https://twitter.com/wardog1_vS",
-          image: require("../assets/img/wardog.png"),
+          about: "GOD, Family, Friend. I love being a Dad, Crypto Expert, Influencer, Coach 2-Blessed-2-B-Stressed",
+          image: require("../assets/img/json.jpeg"),
         },
         {
-          name: "@shaco_vS",
+          name: "Trent Silver",
           role: "CO-FOUNDER",
-          link: "https://twitter.com/shaco_vS",
-          image: require("../assets/img/shaco.png"),
+          about: "Media Mogul & Viral Marketing Specialist as seen on Tony Robbins Stages for News Jacking",
+          image: require("../assets/img/trent.jpeg"),
         },
         {
-          name: "@SpicycoffeeArt",
-          role: "LEAD ARTIST",
-          link: "https://twitter.com/SpicycoffeeArt",
-          image: require("../assets/img/Archer-export.png"),
-        },
-        {
-          name: "@jacksromart",
-          role: "ARTIST AND ANIMATOR",
-          link: "https://twitter.com/jacksromart",
-          image: require("../assets/img/JackAv.png"),
-        },
-        {
-          name: "@cineNFT",
-          role: "LEAD MARKETER AND ADVISOR",
-          link: "https://twitter.com/cineNFT",
-          image: require("../assets/img/ninja.png"),
-        },
-        {
-          name: "@ernestoporto_",
-          role: "COMMUNITY MOD",
-          link: "https://twitter.com/ernestoporto_",
-          image: require("../assets/img/ernesto.jpg"),
-        },
-        {
-          name: "Building Ideas",
-          role: "BLOCKCHAIN DEVELOPERS",
-          link: "https://twitter.com/santypk4",
-          image: require("../assets/img/everyone.png"),
+          name: "Samuel Mayers",
+          role: "CO-FOUNDER",
+          about: "Vibe Manager in charge of keeping the energy high and the stress low in all the things we do",
+          image: require("../assets/img/samuel.jpeg"),
         },
       ],
     };

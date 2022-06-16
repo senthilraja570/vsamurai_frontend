@@ -77,7 +77,7 @@ a:hover {
 .nav-item-button{
     margin-top: -19px;
     margin-left: 28px;
-} 
+}
 .button-connect{
     border: 2px solid #04D9C3;
     background-color: transparent;
@@ -131,7 +131,7 @@ a:hover {
     border: none;
     width: 154px;
     height: 54px;
-    background-color: transparent; 
+    background-color: transparent;
 } */
 .navbar-responsive {
 	display: flex;
@@ -369,8 +369,8 @@ a:hover {
     right: -18px;
     position: absolute;
     border-radius: 4px;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3); 
-    overflow: hidden; 
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
     z-index: 2;
 }
 .div-button-mint-rainbow::before{
@@ -468,7 +468,7 @@ a:hover {
     .button-connect{
         padding: 16px 14px;
         font-size: 14px;
-    }  
+    }
     .nav-item-button{
         margin-left: 0px;
     }
@@ -486,7 +486,7 @@ a:hover {
         margin: auto;
         display: flex;
         flex-direction: column;
-    } 
+    }
 }
 
 @media (min-width: 991.98px) {
@@ -497,7 +497,7 @@ a:hover {
 
 @media (max-width: 767.98px) {
     .presentation-description {
-        width: 500px; 
+        width: 500px;
     }
     .coin-gif {
         margin-left: 79px!important;
@@ -509,7 +509,7 @@ a:hover {
         min-height: 58vh!important;
     }
     .div-button-mint-rainbow {
-        right: -43px;  
+        right: -43px;
     }
 	.navbar-logo {
 		width: 74px;
@@ -573,6 +573,7 @@ a:hover {
     }
 }
 
-
-
-
+.founder-about{
+  color: #aaaaaa;
+  text-align: center;
+}
