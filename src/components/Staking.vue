@@ -318,7 +318,7 @@ p{
 	opacity: 1;
 	width: 17px;
 	height: 17px;
-	margin: 0px 6px;
+	margin: 6px;
 	background: transparent;
 	border: 1px solid white;
 }
