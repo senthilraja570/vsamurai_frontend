@@ -77,7 +77,7 @@ export default {
       return `https://storage.googleapis.com/vsamurai-images/${nft.id}.png`
     },
 	async stakeNFT(nftId, rarity){
-		let apiBaseURI = process.env.API_URI || "http://localhost:3000"
+		let apiBaseURI = "https://vsamurai-nft.wn.r.appspot.com"
 		let chainId = await NetworkService.getNetworkId()
 		let address = this.wallet.address;
 		let apiURL = `${apiBaseURI}/api/signatures/rarity?chainId=${chainId}&address=${address}&nftId=${nftId}`
@@ -212,7 +212,7 @@ export default {
 .staking-text {
 	max-width: 1360px;
 	font-family: 'Raleway';
-	font-size: 24px;   
+	font-size: 24px;
   color: #FFFFFF;
 	margin: auto;
 	letter-spacing: 2px;
@@ -227,7 +227,7 @@ p{
   max-width: 1360px;
 	height: 196px;
   font-family: 'Raleway';
-  font-size: 24px;   
+  font-size: 24px;
   color: #FFFFFF;
   margin: 20px auto;
 	text-align: center;
@@ -338,5 +338,3 @@ p{
 	}
 }
 </style>
-
-

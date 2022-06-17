@@ -10,7 +10,7 @@
         <div class="staking-breeding-price">
             {{ collectable.breedingPrice }} <div class="coin-gif" style="height: 66px; width: 69px; margin-left: 25px"></div>
         </div>
-        
+
         <div v-if="collectable.gettingUserNFTs" class="text-center">
             <div class="spinner-border" style="border-color: white; border-right-color: transparent; width: 8rem; height: 8rem;" role="status">
                 <span class="sr-only">Loading...</span>
@@ -111,7 +111,7 @@ export default {
     },
 	async registerGender(nft) {
 		let signature = null
-		let apiBaseURI = process.env.API_URI || "http://localhost:3000"
+		let apiBaseURI = "https://vsamurai-nft.wn.r.appspot.com"
 		let chainId = await NetworkService.getNetworkId()
 		let address = this.wallet.address
 		let apiURL = `${apiBaseURI}/api/signatures/breed?chainId=${chainId}&address=${address}&nftId=${parseInt(nft.id)}&genderId=${parseInt(nft.gender)}`
@@ -135,7 +135,7 @@ export default {
 		}
         // if you have both genders select
         if(this.nftFemale && this.nftMale){
-            // if you have the necessary edotokens 
+            // if you have the necessary edotokens
 			console.log(this.collectable.edoTokensBalance)
 			console.log(this.collectable.breedingPrice)
             if(this.collectable.edoTokensBalance >= this.collectable.breedingPrice) {
@@ -269,7 +269,7 @@ export default {
 .staking-text {
     max-width: 1360px;
 	font-family: 'Raleway';
-	font-size: 24px;   
+	font-size: 24px;
     color: #FFFFFF;
 	margin: auto;
 	letter-spacing: 2px;
@@ -278,7 +278,7 @@ export default {
 .staking-title {
     text-align: center;
 	font-family: 'Raleway';
-	font-size: 32px;   
+	font-size: 32px;
     color: #FFFFFF;
 	margin: auto;
 	letter-spacing: 2px;
@@ -289,7 +289,7 @@ export default {
     justify-content: center;
     align-content: center;
 	font-family: 'Raleway';
-	font-size: 50px;   
+	font-size: 50px;
     color: #04D9C2;
 	margin: auto;
 	letter-spacing: 2px;
@@ -304,7 +304,7 @@ p{
   max-width: 1360px;
 	height: 196px;
   font-family: 'Raleway';
-  font-size: 24px;   
+  font-size: 24px;
   color: #FFFFFF;
   margin: 20px auto;
 	text-align: center;
@@ -415,5 +415,3 @@ p{
 	}
 }
 </style>
-
-
