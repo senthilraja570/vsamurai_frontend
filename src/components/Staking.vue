@@ -116,7 +116,7 @@ export default {
 }
 
 .btn-my-dojo-staking:hover .text-staking-btn {
-  visibility: visible;	
+  visibility: visible;
 }
 
 .btn-my-dojo-staking{
@@ -195,7 +195,7 @@ export default {
 .staking-text {
 	max-width: 1360px;
 	font-family: 'Raleway';
-	font-size: 24px;   
+	font-size: 24px;
   color: #FFFFFF;
 	margin: auto;
 	letter-spacing: 2px;
@@ -210,7 +210,7 @@ p{
   max-width: 1360px;
 	height: 196px;
   font-family: 'Raleway';
-  font-size: 24px;   
+  font-size: 24px;
   color: #FFFFFF;
   margin: 20px auto;
 	text-align: center;
@@ -269,8 +269,8 @@ p{
 @media (max-width: 767.98px) {
  .text-staking-btn[data-v-638094] {
   	right: -34px;
-  	top: -5px; 
- 	} 
+  	top: -5px;
+ 	}
 }
 @media (max-width: 730px) {
  .line {
@@ -311,6 +311,8 @@ p{
 <style>
 .splide__pagination {
     bottom: 0px;
+    position: inherit;
+    margin-top: 10px;
 }
 .splide__pagination__page {
 	opacity: 1;

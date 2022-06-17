@@ -191,7 +191,6 @@ export default {
 	letter-spacing: 2px;
 	height: 24px;
 	margin-bottom: 10px;
-	margin-top: -26px;
 }
 
 .token {
