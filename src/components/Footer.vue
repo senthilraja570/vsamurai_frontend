@@ -4,7 +4,7 @@
       <div class="company">
         <img src="../assets/img/logo-bg.png" alt="">
         <h2>vSamurai is an NFT collection of male and female Samurai spanning across multiple stages.</h2>
-        <h3>© 2021 vSAMURAI - ALL RIGHTS RESERVED.-</h3>
+        <h3>© 2022 vSAMURAI - ALL RIGHTS RESERVED.-</h3>
       </div>
       <div class="community">
         <div class="social-links">
@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 /* FOOTER */
-.footer-container { 
+.footer-container {
   height: 350px;
   display: flex;
   background-color: #000;
