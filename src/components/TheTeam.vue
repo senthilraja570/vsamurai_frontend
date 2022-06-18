@@ -33,7 +33,7 @@ export default {
         {
           name: "Samuel Mayers",
           role: "CO-FOUNDER",
-          about: "Vibe Manager in charge of keeping the energy high and the stress low in all the things we do",
+          about: "Influencer, World Traveler, Vibe Manager in charge of keeping the energy high and the stress low in all the things we do",
           image: require("../assets/img/samuel.jpeg"),
         },
       ],
