@@ -20,6 +20,6 @@ export default {
   },
   methods: {},
   computed: {},
-  mounted() {},
+  mounted() {window.test=this;},
 };
 </script>

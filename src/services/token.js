@@ -21,17 +21,17 @@ const TokenContractABI = {
         return window.TokenInstance;
       }
     } catch(e) {
-      console.log('Error getting contract instance!');
+      console.error('Error getting contract instance!');
       throw e;
     }
   },
 
-  async totalSupply() {  
+  async totalSupply() {
     const TokenInstance = await this.getContractTokenInstance();
     return TokenInstance.methods.totalSupply().call();
   },
 
-  async mintRewards(_tokenId) {  
+  async mintRewards(_tokenId) {
     const TokenInstance = await this.getContractTokenInstance();
     return TokenInstance.methods._mintRewards(_tokenId).send({
       from: wallet.address,
@@ -43,25 +43,38 @@ const TokenContractABI = {
     return TokenInstance.methods.balanceOf(wallet.address).call()
   },
 
-  async claimRewards(_nftId) {  
+  async claimRewards(_nftId) {
     const TokenInstance = await this.getContractTokenInstance();
     return TokenInstance.methods.claimRewards(_nftId).send({
       from: wallet.address,
     });
   },
 
-  async getTotalClaimable(address, tokenId) {  
+  async getTotalClaimable(address, tokenId) {
     const TokenInstance = await this.getContractTokenInstance();
     return TokenInstance.methods.getTotalClaimable(address, tokenId).call()
   },
 
   async registerForRewards(signature, tokenId, rarity) {
+    console.log("registerForRewards start");
     const TokenInstance = await this.getContractTokenInstance();
-    return TokenInstance.methods.registerForRewards(signature, tokenId, rarity).send({
+      console.log("registerForRewards token init");
+        console.log("registerForRewards wallet.address", wallet.address);
+    var data = await TokenInstance.methods.registerForRewards(signature, tokenId, rarity).send({
       from: wallet.address,
+    }).on('receipt', function(){
+      console.log("registerForRewards receipt");
+      }).then(res => {
+        console.log("registerForRewards then",res.data);
+				return res.data;
+		}).catch(e => {
+        console.error(e);
+				return "Error";
     });
+      console.log("registerForRewards data", data);
+      return data;
   },
-  
+
   async rarities(nftId) {
     const TokenInstance = await this.getContractTokenInstance();
     return TokenInstance.methods.rarities(nftId).call()
@@ -76,7 +89,7 @@ const TokenContractABI = {
     const TokenInstance = await this.getContractTokenInstance();
     return TokenInstance.methods.setTokenRates(newRates).send({from: wallet.address});
   },
-  
+
   async bulkAdminRarityRegistration(tokenIds, rarities, tokenOwners) {
     const TokenInstance = await this.getContractTokenInstance();
     console.log(TokenInstance)
