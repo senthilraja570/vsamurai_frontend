@@ -8,7 +8,7 @@
       </div>
       <div class="community">
         <div class="social-links">
-          <a href="https://discord.gg/D8XnuPaz" Target="_blank"><img src="../assets/img/discord-2.png" alt="Discord" class="discord"></a>
+          <a href="https://discord.gg/G8Y2yxp2Q8" Target="_blank"><img src="../assets/img/discord-2.png" alt="Discord" class="discord"></a>
           <a href="https://twitter.com/vSamurai_NFT" Target="_blank"><img src="../assets/img/twitter.png" alt="Twitter"></a>
           <a href="https://opensea.io/collection/vsamurai-genesis" Target="_blank">
             <img src="../assets/img/opensea.png" class="icon-footer-orange" alt="Opensea">

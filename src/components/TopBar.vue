@@ -59,7 +59,7 @@
         </ul>
         <div class="icons" v-if="!wallet">
           <div class="nav-item nav-item-social">
-            <a href="https://discord.gg/D8XnuPaz" target="_blank" class="social-links" @click="closeNavbar" ><i class="fab fa-discord social-icon"></i></a>
+            <a href="https://discord.gg/G8Y2yxp2Q8" target="_blank" class="social-links" @click="closeNavbar" ><i class="fab fa-discord social-icon"></i></a>
           </div>
           <div class="nav-item nav-item-social">
             <a href="https://twitter.com/vSamurai_NFT" target="_blank" class="social-links" @click="closeNavbar" ><i class="fab fa-twitter social-icon"></i></a>
@@ -96,7 +96,7 @@
             </div>
           </div>
         </li>
-        
+
       </div>
       <Modal
         v-show="isModalVisible"
